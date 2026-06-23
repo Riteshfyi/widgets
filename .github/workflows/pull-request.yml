@@ -217,7 +217,7 @@ jobs:
           key: dist-${{ env.rid }}
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: yarn playwright install --with-deps
 
       - name: Test E2E
         run: yarn run test:e2e:meetings
